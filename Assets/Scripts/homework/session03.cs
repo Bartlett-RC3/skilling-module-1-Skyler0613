@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class session03 : MonoBehaviour {
+public class session03 : MonoBehaviour
+{
 
     int a = 0;
     public GameObject CubeRefe;
@@ -10,10 +11,19 @@ public class session03 : MonoBehaviour {
     bool moveright = false;
 
     // Use this for initialization
-    void Start() {
-     if (moveleft == true)
+    void Start()
+    {
+
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+        if (moveleft == true)
         {
-            if (a <= 17)
+            if (a <= 10)
             {
                 gameObject.transform.Translate(Vector3.left);
                 a++;
@@ -22,27 +32,26 @@ public class session03 : MonoBehaviour {
             {
                 moveleft = false;
                 moveright = true;
-                a = 0;
+                a = -10;
             }
-        }
-     if (moveright == true )
-        {
-            if (a <= 17)
-            {
-                gameObject.transform.Translate(Vector3.right);
-                a++;
-            }
-            else
-            { 
-            moveleft = true;
-                moveright = false;
-                a = 0; }
         }
 
+            if (moveright == true)
+            {
+                if (a <= 10)
+                {
+                    gameObject.transform.Translate(Vector3.right);
+                    a++;
+                }
+                else
+                {
+                    moveleft = true;
+                    moveright = false;
+                    a = -10;
+                }
+            }
+
+        }
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-}
+
+

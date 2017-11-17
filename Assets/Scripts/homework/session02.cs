@@ -46,6 +46,7 @@ public class session02 : MonoBehaviour {
 
         }
         */
+
         for (int d = 51; d < mylist.Count; d = d + 3)
         {
             Debug.Log("every number that can be divided by 3 in 50-60 is" + mylist[d]);
