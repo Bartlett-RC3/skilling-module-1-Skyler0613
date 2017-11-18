@@ -6,7 +6,7 @@ public class session03 : MonoBehaviour
 {
 
     int a = 0;
-    public GameObject CubeRefe;
+    public GameObject Cube1;
     bool moveleft = true;
     bool moveright = false;
 
@@ -35,7 +35,7 @@ public class session03 : MonoBehaviour
                 a = -10;
             }
         }
-
+        
             if (moveright == true)
             {
                 if (a <= 10)
@@ -51,7 +51,25 @@ public class session03 : MonoBehaviour
                 }
             }
 
+        if (Input.GetKey(KeyCode.A))
+        {
+            gameObject.transform.Rotate(new Vector3(0, 5, 10));
         }
+
+
+        if (Input.GetMouseButtonDown(0))
+        {
+
+            Renderer rend = GetComponent<Renderer>(); 
+            rend.material.SetColor("_Color", Color.blue);
+            
+        }
+        
+
+
+
+
     }
+}
 
 

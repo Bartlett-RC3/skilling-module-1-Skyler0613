@@ -6,6 +6,7 @@ public class session02 : MonoBehaviour {
 
     public string[] marvel = { "IronMan", "CaptainAmerican", "WinterSoldier" };
     public List<int> mylist = new List<int>();
+    Dictionary<string, string> music = new Dictionary<string, string>();
 
     int c, d;
 
@@ -36,27 +37,43 @@ public class session02 : MonoBehaviour {
             mylist.Add(d);
 
         }
-        /*
-        for (int d = 50; d < 60; d++)
+        foreach (string name in marvel) 
         {
-            if (d % 3 == 0)
-            {
-                Debug.Log("every number that can be divided by 3 in 50-60 is" + mylist[d]);
-            }
-
+            Debug.Log(name);
         }
-        */
 
-        for (int d = 51; d < mylist.Count; d = d + 3)
+        music.Add("slot1", "classical");
+        music.Add("slot2", "post rock");
+
+        foreach (var item in music)
+        {
+            Debug.Log(item.Key + item);
+        }
+
+
+        for (int d = 51; d < 60; d = d + 3)
         {
             Debug.Log("every number that can be divided by 3 in 50-60 is" + mylist[d]);
         }
+
+
+
+
+
 
 
     }
 
     // Update is called once per frame
     void Update () {
-		
-	}
+
+      
+
+       
+
+
+
+    }
 }
+
+
