@@ -61,8 +61,7 @@ public class session02 : MonoBehaviour {
         Dog dogs = new Dog();
 
         Debug.Log("my first dog's name is "+dogs.dogname[0]);
-        Debug.Log(int health);
-
+        
 
     }
 

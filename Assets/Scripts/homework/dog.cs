@@ -3,7 +3,7 @@
 namespace doggydoggy
 {
 
-    public class Dog : health
+    public class Dog 
     {
 
         public string[] dogname = { "baek", "sehun", "kai" };
