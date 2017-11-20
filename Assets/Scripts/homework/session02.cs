@@ -9,7 +9,7 @@ public class session02 : MonoBehaviour {
     public List<int> mylist = new List<int>();
     Dictionary<string, string> music = new Dictionary<string, string>();
 
-    int c, d;
+   
 
     // Use this for initialization
     void Start()
@@ -52,16 +52,14 @@ public class session02 : MonoBehaviour {
         }
 
 
-       /*or (int d = 51; d < 60; d = d + 3)
-        {
-            Debug.Log("every number that can be divided by 3 in 50-60 is" + mylist[d]);
-        }*/
+       
  
 
-        Dog dogs = new Dog();
+        Dogclass dogs = new Dogclass();
 
         Debug.Log("my first dog's name is "+dogs.dogname[0]);
-        
+        Debug.Log(dogs.health +"/"+ dogs.maxhealth );
+        Debug.Log("my dog's health percentage is "+dogs.healthPercent()+"%");
 
     }
 
