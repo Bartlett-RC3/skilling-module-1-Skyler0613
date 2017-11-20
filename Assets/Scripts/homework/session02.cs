@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using doggydoggy;
 
 public class session02 : MonoBehaviour {
 
@@ -37,7 +38,7 @@ public class session02 : MonoBehaviour {
             mylist.Add(d);
 
         }
-        foreach (string name in marvel) 
+        foreach (string name in marvel)
         {
             Debug.Log(name);
         }
@@ -51,15 +52,16 @@ public class session02 : MonoBehaviour {
         }
 
 
-        for (int d = 51; d < 60; d = d + 3)
+       /*or (int d = 51; d < 60; d = d + 3)
         {
             Debug.Log("every number that can be divided by 3 in 50-60 is" + mylist[d]);
-        }
+        }*/
+ 
 
+        Dog dogs = new Dog();
 
-
-
-
+        Debug.Log("my first dog's name is "+dogs.dogname[0]);
+        Debug.Log(int health);
 
 
     }
